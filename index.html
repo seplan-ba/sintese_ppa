@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Sínteses - PPA Bahia</title>
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+  /* PATCH PORTAL — logos nas laterais sem sobrepor o título */
+  header.portal-header{
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    align-items: center;
+    column-gap: 16px;
+    padding: 22px 28px !important;
+    text-align: center;
+  }
+
+  header.portal-header .portal-title{
+    text-align: center;
+    min-width: 0;
+  }
+
+  header.portal-header h1{
+    margin: 0 0 6px 0;
+    white-space: normal !important;
+    line-height: 1.15;
+  }
+
+  header.portal-header p{
+    margin: 0;
+    white-space: normal !important;
+  }
+
+  header.portal-header .portal-logo{
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  header.portal-header .portal-logo-left{
+    justify-self: start;
+  }
+
+  header.portal-header .portal-logo-right{
+    justify-self: end;
+  }
+
+  @media (max-width: 980px){
+    header.portal-header{
+      grid-template-columns: 150px 1fr 150px;
+      padding: 20px 20px !important;
+    }
+    header.portal-header .portal-logo{ height: 48px; }
+  }
+
+  /* mobile: logos na 1ª linha, título na 2ª (sem cobrir nada) */
+  @media (max-width: 720px){
+    header.portal-header{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      padding: 16px 16px !important;
+      row-gap: 10px;
+    }
+    header.portal-header .portal-logo-left{
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      justify-self: start;
+    }
+    header.portal-header .portal-logo-right{
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      justify-self: end;
+    }
+    header.portal-header .portal-title{
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+    }
+    header.portal-header .portal-logo{ height: 34px; }
+  }
+
+  /* se ainda existirem logos no rodapé do portal, esconder */
+  footer img[src$="logo_sepege.png"],
+  footer img[src$="logo_seplan.png"]{
+    display: none !important;
+  }
+</style>
+
+</head>
+<body>
+
+<header class="portal-header">
+  <img class="portal-logo portal-logo-left" src="logo_sepege.png" alt="Logo SEPEGE">
+  <div class="portal-title">
+    <h1>Síntese Avaliativa do Desempenho dos Programas do PPA Bahia 2024–2027</h1>
+    <p>Secretaria do Planejamento do Estado – Seplan</p>
+  </div>
+  <img class="portal-logo portal-logo-right" src="logo_seplan.png" alt="Logo SEPLAN">
+</header>
+
+<div class="portal-wrap">
+
+  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#005596; border-bottom-color:#005596;">Visão Geral</h2>
+    <div class="grid-programas">
+      <a href="RAD_Resumo_PPA_v1.html" class="card-programa" style="background-color:#005596;">
+        <div class="card-id">PPA</div>
+        <i class="fa-solid fa-chart-pie card-icone"></i>
+        <div class="card-nome">Desempenho Global<br>dos Programas</div>
+      </a>
+    </div>
+  </div>
+
+    <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#E5243B; border-bottom-color:#E5243B;">Assistência Social e Garantia de Direitos</h2>
+    <div class="grid-programas">    <a href="Sintese_400.html" class="card-programa" style="background-color:#E5243B;">
+      <div class="card-id">400</div>
+      <i class="fa-solid fa-balance-scale card-icone"></i>
+      <div class="card-nome">Acesso à Justiça</div>
+    </a>    <a href="Sintese_401.html" class="card-programa" style="background-color:#E5243B;">
+      <div class="card-id">401</div>
+      <i class="fa-solid fa-book-reader card-icone"></i>
+      <div class="card-nome">Educação e Cultura</div>
+    </a>    <a href="Sintese_402.html" class="card-programa" style="background-color:#E5243B;">
+      <div class="card-id">402</div>
+      <i class="fa-solid fa-hands-helping card-icone"></i>
+      <div class="card-nome">SUAS Bahia</div>
+    </a>    <a href="Sintese_403.html" class="card-programa" style="background-color:#E5243B;">
+      <div class="card-id">403</div>
+      <i class="fa-solid fa-apple-alt card-icone"></i>
+      <div class="card-nome">Segurança Alimentar</div>
+    </a>    <a href="Sintese_404.html" class="card-programa" style="background-color:#E5243B;">
+      <div class="card-id">404</div>
+      <i class="fa-solid fa-dove card-icone"></i>
+      <div class="card-nome">Cuidado em Liberdade</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#DDA63A; border-bottom-color:#DDA63A;">Ciência, Tecnologia e Inovação</h2>
+    <div class="grid-programas">    <a href="Sintese_405.html" class="card-programa" style="background-color:#DDA63A;">
+      <div class="card-id">405</div>
+      <i class="fa-solid fa-lightbulb card-icone"></i>
+      <div class="card-nome">Bahia Inovadora</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#E56B24; border-bottom-color:#E56B24;">Cultura</h2>
+    <div class="grid-programas">    <a href="Sintese_406.html" class="card-programa" style="background-color:#E56B24;">
+      <div class="card-id">406</div>
+      <i class="fa-solid fa-theater-masks card-icone"></i>
+      <div class="card-nome">Cultura na Bahia</div>
+    </a>    <a href="Sintese_407.html" class="card-programa" style="background-color:#E56B24;">
+      <div class="card-id">407</div>
+      <i class="fa-solid fa-monument card-icone"></i>
+      <div class="card-nome">Memória e Patrimônio</div>
+    </a>    <a href="Sintese_408.html" class="card-programa" style="background-color:#E56B24;">
+      <div class="card-id">408</div>
+      <i class="fa-solid fa-palette card-icone"></i>
+      <div class="card-nome">Economia da Cultura</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#4C9F38; border-bottom-color:#4C9F38;">Desenvolvimento Produtivo</h2>
+    <div class="grid-programas">    <a href="Sintese_409.html" class="card-programa" style="background-color:#4C9F38;">
+      <div class="card-id">409</div>
+      <i class="fa-solid fa-chart-line card-icone"></i>
+      <div class="card-nome">Cresce Mais</div>
+    </a>    <a href="Sintese_410.html" class="card-programa" style="background-color:#4C9F38;">
+      <div class="card-id">410</div>
+      <i class="fa-solid fa-fist-raised card-icone"></i>
+      <div class="card-nome">Fortalece Aê</div>
+    </a>    <a href="Sintese_411.html" class="card-programa" style="background-color:#4C9F38;">
+      <div class="card-id">411</div>
+      <i class="fa-solid fa-map-marked-alt card-icone"></i>
+      <div class="card-nome">Viva Bahia</div>
+    </a>    <a href="Sintese_412.html" class="card-programa" style="background-color:#4C9F38;">
+      <div class="card-id">412</div>
+      <i class="fa-solid fa-hard-hat card-icone"></i>
+      <div class="card-nome">Trabalho Decente</div>
+    </a>    <a href="Sintese_413.html" class="card-programa" style="background-color:#4C9F38;">
+      <div class="card-id">413</div>
+      <i class="fa-solid fa-handshake card-icone"></i>
+      <div class="card-nome">Bahia Solidária</div>
+    </a>    <a href="Sintese_414.html" class="card-programa" style="background-color:#4C9F38;">
+      <div class="card-id">414</div>
+      <i class="fa-solid fa-running card-icone"></i>
+      <div class="card-nome">Esporte por Toda</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#8A2BE2; border-bottom-color:#8A2BE2;">Desenvolvimento Rural</h2>
+    <div class="grid-programas">    <a href="Sintese_415.html" class="card-programa" style="background-color:#8A2BE2;">
+      <div class="card-id">415</div>
+      <i class="fa-solid fa-seedling card-icone"></i>
+      <div class="card-nome">Minha Terra</div>
+    </a>    <a href="Sintese_416.html" class="card-programa" style="background-color:#8A2BE2;">
+      <div class="card-id">416</div>
+      <i class="fa-solid fa-tractor card-icone"></i>
+      <div class="card-nome">Cultive Conhecimento</div>
+    </a>    <a href="Sintese_417.html" class="card-programa" style="background-color:#8A2BE2;">
+      <div class="card-id">417</div>
+      <i class="fa-solid fa-leaf card-icone"></i>
+      <div class="card-nome">Campo Sustentável</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#FD6925; border-bottom-color:#FD6925;">Desenvolvimento Urbano</h2>
+    <div class="grid-programas">    <a href="Sintese_418.html" class="card-programa" style="background-color:#FD6925;">
+      <div class="card-id">418</div>
+      <i class="fa-solid fa-home card-icone"></i>
+      <div class="card-nome">Bahia Minha Casa</div>
+    </a>    <a href="Sintese_419.html" class="card-programa" style="background-color:#FD6925;">
+      <div class="card-id">419</div>
+      <i class="fa-solid fa-bus card-icone"></i>
+      <div class="card-nome">Mobilidade Bahia</div>
+    </a>    <a href="Sintese_420.html" class="card-programa" style="background-color:#FD6925;">
+      <div class="card-id">420</div>
+      <i class="fa-solid fa-faucet card-icone"></i>
+      <div class="card-nome">Saneamento Básico</div>
+    </a>    <a href="Sintese_421.html" class="card-programa" style="background-color:#FD6925;">
+      <div class="card-id">421</div>
+      <i class="fa-solid fa-city card-icone"></i>
+      <div class="card-nome">Urbaniza Bahia</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#C5192D; border-bottom-color:#C5192D;">Educação</h2>
+    <div class="grid-programas">    <a href="Sintese_422.html" class="card-programa" style="background-color:#C5192D;">
+      <div class="card-id">422</div>
+      <i class="fa-solid fa-school card-icone"></i>
+      <div class="card-nome">Escola Presente</div>
+    </a>    <a href="Sintese_423.html" class="card-programa" style="background-color:#C5192D;">
+      <div class="card-id">423</div>
+      <i class="fa-solid fa-laptop-code card-icone"></i>
+      <div class="card-nome">Educatecno</div>
+    </a>    <a href="Sintese_424.html" class="card-programa" style="background-color:#C5192D;">
+      <div class="card-id">424</div>
+      <i class="fa-solid fa-user-graduate card-icone"></i>
+      <div class="card-nome">Educação Superior</div>
+    </a>    <a href="Sintese_425.html" class="card-programa" style="background-color:#C5192D;">
+      <div class="card-id">425</div>
+      <i class="fa-solid fa-chalkboard-teacher card-icone"></i>
+      <div class="card-nome">Escola Democrática</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#FF3A21; border-bottom-color:#FF3A21;">Igualdade e Comunidades</h2>
+    <div class="grid-programas">    <a href="Sintese_426.html" class="card-programa" style="background-color:#FF3A21;">
+      <div class="card-id">426</div>
+      <i class="fa-solid fa-fist-raised card-icone"></i>
+      <div class="card-nome">Bahia Antirracista</div>
+    </a>    <a href="Sintese_427.html" class="card-programa" style="background-color:#FF3A21;">
+      <div class="card-id">427</div>
+      <i class="fa-solid fa-campground card-icone"></i>
+      <div class="card-nome">Povos Tradicionais</div>
+    </a>    <a href="Sintese_428.html" class="card-programa" style="background-color:#FF3A21;">
+      <div class="card-id">428</div>
+      <i class="fa-solid fa-feather-alt card-icone"></i>
+      <div class="card-nome">Bahia Indígena</div>
+    </a>    <a href="Sintese_429.html" class="card-programa" style="background-color:#FF3A21;">
+      <div class="card-id">429</div>
+      <i class="fa-solid fa-person-dress card-icone"></i>
+      <div class="card-nome">Mulher sem Violência</div>
+    </a>    <a href="Sintese_430.html" class="card-programa" style="background-color:#FF3A21;">
+      <div class="card-id">430</div>
+      <i class="fa-solid fa-briefcase card-icone"></i>
+      <div class="card-nome">Inclusão Mulheres</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#F36D25; border-bottom-color:#F36D25;">Infraestrutura e Logística</h2>
+    <div class="grid-programas">    <a href="Sintese_431.html" class="card-programa" style="background-color:#F36D25;">
+      <div class="card-id">431</div>
+      <i class="fa-solid fa-bolt card-icone"></i>
+      <div class="card-nome">Mais Energia</div>
+    </a>    <a href="Sintese_432.html" class="card-programa" style="background-color:#F36D25;">
+      <div class="card-id">432</div>
+      <i class="fa-solid fa-road card-icone"></i>
+      <div class="card-nome">Em Movimento</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#3F7E44; border-bottom-color:#3F7E44;">Meio Ambiente e Água</h2>
+    <div class="grid-programas">    <a href="Sintese_433.html" class="card-programa" style="background-color:#3F7E44;">
+      <div class="card-id">433</div>
+      <i class="fa-solid fa-tree card-icone"></i>
+      <div class="card-nome">Meio Ambiente</div>
+    </a>    <a href="Sintese_434.html" class="card-programa" style="background-color:#3F7E44;">
+      <div class="card-id">434</div>
+      <i class="fa-solid fa-water card-icone"></i>
+      <div class="card-nome">Segurança Hídrica</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#26BDE2; border-bottom-color:#26BDE2;">Saúde</h2>
+    <div class="grid-programas">    <a href="Sintese_435.html" class="card-programa" style="background-color:#26BDE2;">
+      <div class="card-id">435</div>
+      <i class="fa-solid fa-notes-medical card-icone"></i>
+      <div class="card-nome">Cuidar Mais</div>
+    </a>    <a href="Sintese_436.html" class="card-programa" style="background-color:#26BDE2;">
+      <div class="card-id">436</div>
+      <i class="fa-solid fa-heartbeat card-icone"></i>
+      <div class="card-nome">SUS Forte</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#0A97D9; border-bottom-color:#0A97D9;">Segurança e Defesa Social</h2>
+    <div class="grid-programas">    <a href="Sintese_437.html" class="card-programa" style="background-color:#0A97D9;">
+      <div class="card-id">437</div>
+      <i class="fa-solid fa-shield-halved card-icone"></i>
+      <div class="card-nome">Bahia Segura</div>
+    </a>    <a href="Sintese_438.html" class="card-programa" style="background-color:#0A97D9;">
+      <div class="card-id">438</div>
+      <i class="fa-solid fa-door-open card-icone"></i>
+      <div class="card-nome">Ressocializar</div>
+    </a>    <a href="Sintese_439.html" class="card-programa" style="background-color:#0A97D9;">
+      <div class="card-id">439</div>
+      <i class="fa-solid fa-car-burst card-icone"></i>
+      <div class="card-nome">Trânsito Seguro</div>
+    </a></div></div>  <div class="eixo-container">
+    <h2 class="eixo-titulo" style="color:#103A71; border-bottom-color:#103A71;">Gestão Governamental</h2>
+    <div class="grid-programas">    <a href="Sintese_440.html" class="card-programa" style="background-color:#103A71;">
+      <div class="card-id">440</div>
+      <i class="fa-solid fa-project-diagram card-icone"></i>
+      <div class="card-nome">Planeja Bahia</div>
+    </a>    <a href="Sintese_441.html" class="card-programa" style="background-color:#103A71;">
+      <div class="card-id">441</div>
+      <i class="fa-solid fa-file-invoice-dollar card-icone"></i>
+      <div class="card-nome">Gestão Fiscal</div>
+    </a>    <a href="Sintese_442.html" class="card-programa" style="background-color:#103A71;">
+      <div class="card-id">442</div>
+      <i class="fa-solid fa-users-cog card-icone"></i>
+      <div class="card-nome">Serviços Públicos</div>
+    </a>    <a href="Sintese_443.html" class="card-programa" style="background-color:#103A71;">
+      <div class="card-id">443</div>
+      <i class="fa-solid fa-laptop card-icone"></i>
+      <div class="card-nome">Governo Digital</div>
+    </a>    <a href="Sintese_444.html" class="card-programa" style="background-color:#103A71;">
+      <div class="card-id">444</div>
+      <i class="fa-solid fa-comments card-icone"></i>
+      <div class="card-nome">Bahia Participativa</div>
+    </a>    <a href="Sintese_445.html" class="card-programa" style="background-color:#103A71;">
+      <div class="card-id">445</div>
+      <i class="fa-solid fa-id-badge card-icone"></i>
+      <div class="card-nome">Gestão Pessoas</div>
+    </a>    <a href="Sintese_446.html" class="card-programa" style="background-color:#103A71;">
+      <div class="card-id">446</div>
+      <i class="fa-solid fa-building card-icone"></i>
+      <div class="card-nome">Patrimônio</div>
+    </a></div></div>
+
+</div>
+
+<footer>
+<div class="assinatura">Desenvolvido por: DAP – Diretoria de Avaliação de Políticas Públicas</div>
+</footer>
+
+</body>
+</html>
