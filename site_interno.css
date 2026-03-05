@@ -199,3 +199,148 @@ html, body {
     padding: 10px 12px !important;
   }
 }
+
+/* =========================
+   MOBILE (RAD + SINTESes)
+   ========================= */
+@media (max-width: 720px){
+
+  /* folha A4 vira “full width” com margem leve */
+  .sheet{
+    width: auto !important;
+    margin: 10px !important;
+    border-radius: 14px !important;
+  }
+
+  /* menos “respiro” para caber acima da dobra */
+  .content{
+    padding: 18px 16px !important;
+  }
+
+  /* topbar mais compacta, sem estourar */
+  .topbar.topbar-v3{
+    padding: 10px 12px !important;
+  }
+
+  .topbar.topbar-v3 .tb-center img{
+    height: 26px !important;
+  }
+
+  .topbar.topbar-v3 .btn{
+    font-size: 13px !important;
+    padding: 10px 12px !important;
+  }
+
+  .topbar.topbar-v3 .badge{
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+  }
+
+  /* títulos do header menores no celular */
+  .content h1.title-global{
+    font-size: 28px !important;
+    line-height: 1.08 !important;
+  }
+  .content #header h1.title:not(.title-global){
+    font-size: 24px !important;
+    line-height: 1.10 !important;
+  }
+
+  /* seções 1/2/3: mais legíveis sem “gritar” */
+  .section.level1 h1{ font-size: 20px !important; }
+  .section.level2 h2{ font-size: 18px !important; }
+  .section.level3 h3{ font-size: 16px !important; }
+
+  /* corpo: linha mais curta e confortável */
+  .content p,
+  .content li{
+    font-size: 1.02rem !important;
+    line-height: 1.55 !important;
+  }
+
+  /* tabelas/gráficos: permitir scroll horizontal sem quebrar layout */
+  table{
+    display: block !important;
+    overflow-x: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* imagens: nunca estourar a largura */
+  img{
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* MOBILE EXTRA — evitar título cortado na Visão Geral */
+@media (max-width: 520px){
+
+  /* o “comido” vem do nowrap no meio do título */
+  .content h1.title-global .nowrap{
+    white-space: normal !important;
+  }
+
+  /* reduz um pouco e força quebra saudável */
+  .content h1.title-global{
+    font-size: 26px !important;     /* teste 24 / 26 / 28 */
+    line-height: 1.10 !important;
+    overflow-wrap: anywhere !important;
+  }
+}
+
+/* HOTFIX — TOPBAR MOBILE LIMPA (substitui a simetria que ficou feia) */
+@media (max-width: 520px){
+
+  .topbar.topbar-v3{
+    grid-template-columns: 1fr auto 1fr !important;
+    grid-template-rows: auto auto !important;
+    row-gap: 8px !important;
+    align-items: center !important;
+  }
+
+  /* linha 1: botão à esquerda, badge à direita */
+  .topbar.topbar-v3 .tb-left{
+    grid-column: 1 / 2 !important;
+    grid-row: 1 !important;
+    justify-self: start !important;
+  }
+
+  .topbar.topbar-v3 .tb-right{
+    grid-column: 3 / 4 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+  }
+
+  /* linha 2: logos centralizados */
+  .topbar.topbar-v3 .tb-center{
+    grid-column: 1 / 4 !important;
+    grid-row: 2 !important;
+    justify-self: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  /* trava tamanho para ficar “bonito” e não torto */
+  .topbar.topbar-v3 .tb-center img{
+    height: 22px !important;
+    width: auto !important;
+    max-width: 120px !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+
+  /* controles compactos */
+  .topbar.topbar-v3 .btn{
+    font-size: 12px !important;
+    padding: 8px 10px !important;
+  }
+
+  .topbar.topbar-v3 .badge{
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+    white-space: nowrap !important;
+  }
+}
