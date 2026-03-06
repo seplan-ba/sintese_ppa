@@ -87,6 +87,14 @@
   footer img[src$="logo_seplan.png"]{
     display: none !important;
   }
+
+  /* FIX: manter a faixa azul do portal fixa ao rolar */
+  header.portal-header{
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,.18);
+  }
 </style>
 
 </head>

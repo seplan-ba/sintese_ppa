@@ -344,3 +344,21 @@ html, body {
     white-space: nowrap !important;
   }
 }
+
+/* =========================================================
+   INTERNOS (RAD + Sintese): topbar fixa ao rolar
+   ========================================================= */
+.topbar.topbar-v3{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #eaf3ff;
+  box-shadow: 0 4px 14px rgba(0,0,0,.12);
+}
+
+/* iOS safe-area */
+@supports (padding: env(safe-area-inset-top)){
+  .topbar.topbar-v3{
+    top: env(safe-area-inset-top);
+  }
+}

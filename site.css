@@ -325,3 +325,13 @@ footer{text-align:center;padding:2rem;background:#fff;border-top:1px solid var(-
     line-height: 1.2 !important;
   }
 }
+
+/* =========================================================
+   PORTAL (index): header fixo ao rolar
+   ========================================================= */
+header.portal-header{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 6px 18px rgba(0,0,0,.18);
+}
