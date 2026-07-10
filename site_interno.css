@@ -156,7 +156,7 @@ html, body {
 
 /* 1) inverter ordem: SEPEGE primeiro (à esquerda), depois SEPLAN/BAHIA */
 .topbar.topbar-v3 .tb-center img[src$="logo_sepege.png"] { order: 1 !important; }
-.topbar.topbar-v3 .tb-center img[src$="seplan_ESTADO_FUNDO_BRANCO.png.png"] { order: 2 !important; }
+.topbar.topbar-v3 .tb-center img[src$="seplan_ESTADO_FUNDO_BRANCO.png"] { order: 2 !important; }
 
 /* 2) evitar sobreposição no mobile: empilha a faixa do meio (logos) abaixo do botão/badge */
 @media (max-width: 820px) {
